@@ -1,0 +1,56 @@
+name: "China Modernization Roadmap Feedback"
+description: "Share your reflections on China's modernization goals by selecting options for each impact area."
+title: "[Feedback] Your Modernization Roadmap Choices"
+labels: ["roadmap-feedback"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 欢迎参与“中国现代化路线图”反馈
+        请按照以下问题选择您认同的答案，并在最后分享您的愿景声明。此反馈将帮助我们理解大众对现代化目标的看法。
+
+  - type: dropdown
+    id: technology_access
+    attributes:
+      label: "您认为技术是否应对所有人开放，不论背景如何？"
+      description: "请选择最符合您观点的选项。"
+      options:
+        - "是的，技术普及对于平等机会非常重要。"
+        - "一定程度上，技术资源应根据需求和地区发展进行分配。"
+        - "不一定，技术普及应与经济能力和市场需求相符。"
+
+  - type: dropdown
+    id: international_conflict
+    attributes:
+      label: "您认为中国应如何应对全球文化差异和冲突？"
+      description: "请选择最符合您观点的选项。"
+      options:
+        - "通过文化交流促进相互理解和尊重。"
+        - "优先本国价值观，同时寻求建立选择性的国际合作。"
+        - "主要保持内部价值观，不一定需要适应全球期望。"
+
+  - type: dropdown
+    id: environmental_priority
+    attributes:
+      label: "您认为环境保护是否优先于工业进步？"
+      options:
+        - "是的，可持续发展应放在首位。"
+        - "两者均重要，但工业进步支持经济增长。"
+        - "否，工业发展优先，环境问题稍后解决。"
+
+  - type: dropdown
+    id: economic_equity
+    attributes:
+      label: "您认为经济公平对一个繁荣的中国是否至关重要？"
+      options:
+        - "是的，减少不平等能带来更稳定的社会。"
+        - "一定程度上，但我认为个人努力应是成功的基础。"
+        - "否，经济公平与个人追求财富相比并不重要。"
+
+  - type: textarea
+    id: personal_statement
+    attributes:
+      label: "个人现代化愿景声明"
+      description: "请分享您的个人现代化愿景声明，表达您对中国未来的期望。"
+      placeholder: "我的愿景是……"
